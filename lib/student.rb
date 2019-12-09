@@ -11,7 +11,6 @@ class Student
       self.send("#{key}=", value)
     end
     @@all << self
-    binding.pry
   end
 
   def self.create_from_collection(students_array)
