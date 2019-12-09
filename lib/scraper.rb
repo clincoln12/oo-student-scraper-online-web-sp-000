@@ -27,7 +27,7 @@ class Scraper
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
     
-    
+    social_media = doc.css('div.')
   end
 
 end
