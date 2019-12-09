@@ -27,10 +27,10 @@ class Scraper
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
     
-    profile_page = doc.css('div.social-icon-container')
-    social_media_ary = []
+    profile_page = doc.css('div.main-wrapper.profile')
+    profile_page_ary = []
     
-    social_media.each do |social|
+    profile_page.each do |social|
       social_media_hash = {
         twitter: 
         linkedin:
