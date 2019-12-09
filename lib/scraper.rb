@@ -30,9 +30,9 @@ class Scraper
     profile_page = doc.css('div.main-wrapper.profile')
     profile_page_ary = []
     
-    profile_page.each do |social|
+    profile_page.each do |info|
       profile_page_hash = {
-        twitter: 
+        twitter: info.css('a').attribute('href').value
         linkedin:
         github:
         blog:
