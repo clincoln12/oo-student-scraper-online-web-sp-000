@@ -32,7 +32,12 @@ class Scraper
     
     social_media.each do |social|
       social_media_hash = {
-        
+        twitter: 
+        linkedin:
+        github:
+        blog:
+        profile_quote:
+        bio:
       }
       
     end
