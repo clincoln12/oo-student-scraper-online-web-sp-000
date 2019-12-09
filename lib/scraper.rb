@@ -31,7 +31,7 @@ class Scraper
     profile_page_ary = []
     
     profile_page.each do |social|
-      social_media_hash = {
+      profile_page_hash = {
         twitter: 
         linkedin:
         github:
