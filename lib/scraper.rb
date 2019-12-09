@@ -26,22 +26,10 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
-    students = {}
+    students_info = {}
     
-    social_info = doc.css('div.social-icon-container')
-    profile_page_ary = []
-    
-    profile_page.each do |info|
-      profile_page_hash = {
-        twitter: info.css('a').attribute('href').value
-        linkedin:
-        github:
-        blog:
-        profile_quote:
-        bio:
-      }
-      
-    end
+    social_media_info = doc.css('div.social-icon-container')
+   
   end
 
 end
